@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Demo App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="auth-card">
+    <h1 class="brand">Demo App</h1>
+    <h2>Register</h2>
+    <form id="register-form">
+      <div class="field">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="firstName" autocomplete="given-name">
+      </div>
+      <div class="field">
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="lastName" autocomplete="family-name">
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel">
+      </div>
+      <div class="field">
+        <label for="company">Company</label>
+        <input type="text" id="company" name="company" autocomplete="organization">
+      </div>
+      <div class="field">
+        <label for="reg-username">Username</label>
+        <input type="text" id="reg-username" name="username" autocomplete="username">
+      </div>
+      <div class="field">
+        <label for="reg-password">Password</label>
+        <input type="password" id="reg-password" name="password" autocomplete="new-password">
+      </div>
+      <button type="submit">Register</button>
+    </form>
+    <p id="success-message" class="success-message" hidden></p>
+    <p class="hint">Already have an account? <a href="/">Login</a></p>
+  </main>
+  <script src="register.js"></script>
+</body>
+</html>

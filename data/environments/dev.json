@@ -1,0 +1,6 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "username": "standard_user",
+  "password": "secret_sauce",
+  "timeout": 15000
+}

@@ -1,0 +1,13 @@
+{
+  // VS Code Cucumber extension settings.
+  // These tell the editor where feature files and step definitions (glue) live,
+  // so it can resolve steps and stop reporting "Was unable to find step for ...".
+  "cucumber.features": [
+    "features/**/*.feature"
+  ],
+  "cucumber.glue": [
+    "step-definitions/**/*.js",
+    "hooks/**/*.js"
+  ],
+  "cucumber.format": "esm"
+}

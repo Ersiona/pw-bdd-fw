@@ -1,0 +1,36 @@
+{
+  "name": "pw-bdd-fw",
+  "version": "1.0.0",
+  "description": "Production-ready UI automation framework: JavaScript + Playwright + Cucumber BDD (Page Object Model, multi-environment, multi-browser, HTML reporting)",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "demo:server": "node scripts/demo-server.js",
+    "cucumber": "cucumber-js",
+    "test": "node scripts/run-tests.js",
+    "test:smoke": "node scripts/run-tests.js --tags '@smoke'",
+    "test:regression": "node scripts/run-tests.js --tags '@regression'",
+    "test:login": "node scripts/run-tests.js --tags '@login'",
+    "test:registration": "node scripts/run-tests.js --tags '@registration'",
+    "test:dev": "cross-env ENV=dev node scripts/run-tests.js",
+    "test:test": "cross-env ENV=test node scripts/run-tests.js",
+    "test:uat": "cross-env ENV=uat node scripts/run-tests.js",
+    "test:chromium": "cross-env BROWSER=chromium node scripts/run-tests.js",
+    "test:firefox": "cross-env BROWSER=firefox node scripts/run-tests.js",
+    "test:webkit": "cross-env BROWSER=webkit node scripts/run-tests.js",
+    "test:parallel": "node scripts/run-tests.js --parallel 2",
+    "report": "node support/generate-html-report.js",
+    "postinstall": "playwright install chromium"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^13.3.0",
+    "@faker-js/faker": "^10.6.0",
+    "@playwright/test": "^1.64.0",
+    "cross-env": "^10.1.0",
+    "cucumber-html-reporter": "^7.2.0",
+    "dotenv": "^18.0.6"
+  }
+}

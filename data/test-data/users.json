@@ -1,0 +1,18 @@
+{
+  "validUser": {
+    "username": "standard_user",
+    "password": "secret_sauce"
+  },
+  "invalidUsers": [
+    {
+      "username": "wrong_user",
+      "password": "wrong_password",
+      "error": "Invalid username or password."
+    },
+    {
+      "username": "",
+      "password": "",
+      "error": "Username and password are required."
+    }
+  ]
+}
